@@ -195,7 +195,7 @@ def get_http_response(url, params=None, referer=None):
     if params:
         params = urllib.urlencode(params)
 
-    headers = {'User-Agent': "Trackback 'em All/" + __version__}
+    headers = {'User-Agent': "Blogidol Trackback/" + __version__}
     if referer:
         headers['Referer'] = referer
     request = urllib2.Request(url, params, headers)
